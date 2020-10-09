@@ -1,11 +1,12 @@
-version: 2.1
+name: "circleci"
+version: 2.0
 
 orbs:
- android: circleci/android@0.2.1
+ android: circleci/android@4.0.1
 
 jobs:
   build:
-    executor: android/android
+    executor: circleci/android
         
     steps:
       - checkout
